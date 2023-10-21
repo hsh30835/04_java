@@ -15,14 +15,21 @@ public class Application {
         /* B_while b = new B_while(); //B_while의 공간을 가진 b를 선언함
         b.testSimpleWhileStatement(); */
 
-        /* B_while b = new B_while();
-        b.doWhileTest(); */
+        /*B_while b = new B_while();
+        b.testSimpleWhileStatement();*/
 
-        Leapyear l = new Leapyear();
-        l.leapYearTest();
+        /*Leapyear l = new Leapyear();
+        l.leapYearTest();*/
 
-        Alarmclock a = new Alarmclock();
-        a.alarmClockTest();
+        Test2 t = new Test2();
+        t.gameTest();
+
+        /*Test1 t = new Test1();
+        String result = t.drinkTset();
+        System.out.println(result);*/
+
+        /*Test1 t = new Test1();
+        t.gugudanTest();*/
 
 
     }

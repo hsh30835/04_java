@@ -2,7 +2,7 @@ package main.java.com.ohgiraffers.section02.looping;
 
 import java.util.Scanner;
 
-public class Alarmclock {
+public class Test2 {
     public void alarmClockTest(){
         /* 상근이는 매일 아침 알람을 듣고 일어난다. 알람을 듣고 바로 일어나면 다행이겠지만, 항상 조금만 더 자려는 마음 때문에 매일 학교를 지각하고 있다.
         * 상근이는 모든 방법을 동원해보았지만, 조금만 더 자려는 마음은 그 어떤 것도 없앨 수가 없었다.
@@ -30,6 +30,37 @@ public class Alarmclock {
             System.out.println("알람은 " + (h-1) + "시" + (m+15) + "분 입니다");
         } else if(h==0){
             System.out.println("알람은 23시 " + (m+15) + "분 입니다");
+        }
+    }
+    public void gameTest() {
+        // up down 게임 만들기
+        // 랜덤으로 생성된 수를 맞추는 게임입니다.
+        // 랜덤으로 생성하는 수의 범위는 1~50 입니다.
+        // 입력한 수가 랜덤으로 생성된 수보다 낮다면 "up",
+        // 입력한 수가 랜덤으로 생성된 수보다 높다면 "down",
+        // 입력한 수가 랜덤으로 생선된 수와 같다면 "정답"이 출력되어야 합니다.
+
+        // 조건문과 반복문을 사용하세요.
+
+        //숫자 하나를 입력한다
+        //다른 숫자를 랜덤으로 생성한다 숫자의 범위는 n>=1 && n<=50
+        //만약 num1<num2면 up 출력
+        //아닐시 num1>num2면 down 출력
+        //같을시 정답 출력
+        //맞을때까지 해야됨
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("숫자 입력");
+        int num1 = scanner.nextInt();
+
+        for (int num2=0; num2<10; num2++) {
+            System.out.println((int) (Math.random() * 50) + 1);
+            if(num1<num2){
+                System.out.println("up");
+            } else if(num1>num2){
+                System.out.println("down");
+            }else{
+                System.out.println("정답");
+            }
         }
     }
 }

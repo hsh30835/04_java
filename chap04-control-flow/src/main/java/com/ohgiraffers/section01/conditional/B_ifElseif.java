@@ -5,35 +5,24 @@ import java.util.Scanner;
 public class B_ifElseif {
     public void testSimpleIfElseStatement() {
         /*
-         * 금도끼 은도끼 동화에서 산신령이 어떤 도끼가 나무꾼의 도끼인지를 무러보는 시나리오 코드를 만들어보자
-         * */
+         * 금도끼 은도끼 동화에서 산신령이 어떤 도끼가 나무꾼의 도끼인지를 물어보는 시나리오 코드를 만들어보자 */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("어느 도끼가 너의 도끼이냐? (1. 금도끼, 2. 은도끼, 3. 쇠도끼) : ");
 
-        System.out.print("어느 도끼가 너의 도끼이냐? (1. 금도끼, 2. 은도끼, 3. 쇠도끼) : ");
+        int x = sc.nextInt();
 
-
-        // 금도끼를 선택한 경우
-        System.out.println("이런 거짓말 쟁이!! 너에게는 아무런 도끼도 줄 수 없구나!! 이 욕심쟁이야!!");
-
-        //은도끼를 선택한 경우
-        System.out.println("욕심이 과하지는 않지만 그래도 넌 거짓말을 하고 있구나!! 어서 썩 사라지거라!!");
-
-        // 쇠도끼를 선택한 경우
-        System.out.println("오호~ 정직하구나~ 여기 있는 금도끼, 은도끼, 쇠도끼를 다 가져가거라!!");
-
-        Scanner scc = new Scanner(System.in);
-        System.out.println("도끼 선택 : ");
-        String x = scc.nextLine();
-
-        if (x == "금도끼") {
+        if(x == 1){
+            // 금도끼를 선택한 경우
             System.out.println("이런 거짓말 쟁이!! 너에게는 아무런 도끼도 줄 수 없구나!! 이 욕심쟁이야!!");
-        } else if (x == "은도끼") {
+        }else if(x == 2){
+            //은도끼를 선택한 경우
             System.out.println("욕심이 과하지는 않지만 그래도 넌 거짓말을 하고 있구나!! 어서 썩 사라지거라!!");
-        } else if (x == "쇠도끼") {
+        }else if(x == 3){
+            // 쇠도끼를 선택한 경우
             System.out.println("오호~ 정직하구나~ 여기 있는 금도끼, 은도끼, 쇠도끼를 다 가져가거라!!");
-        } else {
-            System.out.println("도끼를 선택해라");
+        }else{
+            System.out.println("도끼를 선택하거라 이중에 너의 것이 존재한다.");
         }
-
     }
 
     public void testNestedIfEleseIfStatement() {
@@ -56,9 +45,9 @@ public class B_ifElseif {
         if (point >= 90) {
             //중간 점수시 + 붙이기
             if (point >= 95) {
-                System.out.println("A+");
+                grade = "A+";
             } else {
-                System.out.println("A");
+                grade = "A";
             }
         } else if (point >= 80) {
             if (point >= 85) {
@@ -81,6 +70,6 @@ public class B_ifElseif {
         } else {
             System.out.println("F");
         }
-        System.out.println("종료");
+        System.out.println(name + " 학생의 학점은 " + grade + "입니다.");
     }
 }
