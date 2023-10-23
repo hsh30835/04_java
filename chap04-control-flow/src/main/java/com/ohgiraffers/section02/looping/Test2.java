@@ -49,17 +49,21 @@ public class Test2 {
         //같을시 정답 출력
         //맞을때까지 해야됨
         Scanner scanner = new Scanner(System.in);
-        System.out.println("숫자 입력");
-        int num1 = scanner.nextInt();
 
-        for (int num2=0; num2<10; num2++) {
-            System.out.println((int) (Math.random() * 50) + 1);
-            if(num1<num2){
-                System.out.println("up");
-            } else if(num1>num2){
-                System.out.println("down");
-            }else{
+
+        int num2 = (int)(Math.random() * 50)+1;
+
+        for (;;) {
+            System.out.println("숫자 입력");
+            int num1 = scanner.nextInt();
+            if(num1==num2){
                 System.out.println("정답");
+                break;
+            } else if(num1<num2){
+                System.out.println("up");
+
+            }else{
+                System.out.println("down");
             }
         }
     }

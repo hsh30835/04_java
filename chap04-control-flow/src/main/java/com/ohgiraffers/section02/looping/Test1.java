@@ -3,7 +3,7 @@ package main.java.com.ohgiraffers.section02.looping;
 import java.util.Scanner;
 
 public class Test1 {
-    public void drinkTset(){
+    public void drinkTest(){
         // 음료 계산
         // 자판기를 만들어보자.
         // 자판기가 파는 음료는 사이다(500)   콜라(600)   환타(700)   바카스(1000)  핫식스(1500)
@@ -23,6 +23,35 @@ public class Test1 {
         //계산하시겠습니까?(y/n)
         //y
         //총금액은 1100입니다.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("사이다(500)   콜라(600)   환타(700)   바카스(1000)  핫식스(1500)");
+
+        System.out.println("음료를 선택해주세요 : ");
+
+        String selectedDrink = scanner.nextLine();
+        String order = "";
+        int price = 0;
+        switch (selectedDrink) {
+            case "사이다":
+                price = 500;
+                break;
+            case "콜라":
+                price = 600;
+                break;
+            case "환타":
+                price = 700;
+                break;
+            case "바카스":
+                price = 1000;
+                break;
+            case "핫식스":
+                price = 1500;
+                break;
+        }
+        order = selectedDrink + "를 선택하였으며 가격은" + price + "원 입니다";
+
+        //return order;
 
     }
     public void gugudanTest(){

@@ -21,15 +21,18 @@ public class Application {
         /*Leapyear l = new Leapyear();
         l.leapYearTest();*/
 
-        Test2 t = new Test2();
-        t.gameTest();
+        /*Test2 t = new Test2();
+        t.gameTest();*/
 
         /*Test1 t = new Test1();
-        String result = t.drinkTset();
+        String result = t.drinkTest();
         System.out.println(result);*/
 
         /*Test1 t = new Test1();
         t.gugudanTest();*/
+
+        /*Test3 t = new Test3();
+        t.diceTest();*/
 
 
     }
