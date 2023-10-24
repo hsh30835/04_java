@@ -36,12 +36,12 @@ public class Test1 {
         //입력한 수만큼 사람 부르기
         for (int i = 0; i < n; i++) {
             System.out.println(i+1+"번째 운 없는 자의 이름을 입력하세요");
-            String array = scanner.next();
+            array[i] = scanner.next();
         }
-        //지옥갈 사람 고르기
-        Random ran = new Random();
-        for (int i = 0; i < 1; i++) {
+        //지옥갈 사람 랜덤고르기
+        System.out.println("지옥에 갈 사람은 " + array[(int)(Math.random() * array.length)] + "입니다!");
+        //array 배열에서 랜덤뽑기
 
         }
     }
-}
+

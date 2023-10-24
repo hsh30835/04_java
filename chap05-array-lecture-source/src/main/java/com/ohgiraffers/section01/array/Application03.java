@@ -8,7 +8,7 @@ public class Application03 {
         * 실수 : 0.0
         * 논리 : false
         * 문자 : \u0000
-        * 참조 : unll
+        * 참조 : null
         * */
 
         //new - >> heap 주소를 할당 -> 기본값으로 초기화

@@ -4,7 +4,7 @@ public class Application02 {
     public static void main(String[] args){
         String[] names = {"홍길동", "유관순", "이순신"};
 
-        System.out.println("mnames의 hashcode : " + names.hashCode());
+        System.out.println("names의 hashcode : " + names.hashCode());
 
         print(names);
         String[] animals = getAnimals();

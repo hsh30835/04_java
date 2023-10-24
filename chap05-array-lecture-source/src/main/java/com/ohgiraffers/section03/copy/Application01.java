@@ -47,7 +47,5 @@ public class Application01 {
             System.out.println("deepCopy = " + x);
         }*/
 
-        //주소값도 복사하면 깊은복사 값만 복사하면 얕은복사
-
     }
 }
