@@ -65,7 +65,7 @@ public class Application {
         *   메소드 : 시동걸기, 앞으로간다, 멈추기, 시동끄기
         * */
 
-        CarRacer carRacer = new CarRacer();
+        CarRacer carRacer = new CarRacer(); //carRacer()클래스 에서 정보를 가져오는 carRacer라는 이름을 가진 인스턴스를 생성
         carRacer.startUp();
         Scanner scanner = new Scanner(System.in);
         loop: while(true){
@@ -84,7 +84,7 @@ public class Application {
                 case 2 : carRacer.stepAccelartor(); break;
                 case 3 : carRacer.setUpBreak(); break;
                 case 4 : carRacer.turnOff(); break;
-                case 9 : System.out.println("프로그램을 종료합니다."); break loop;
+                case 9 : System.out.println("프로그램을 종료합니다."); break loop; //loop는 이름을 지정해준것 다른거 넣어도 상관없음
                 default: System.out.println("잘못된 버튼을 선택하셨습니다. 다시 선택해주세요"); break;
             }
             /*if(no == 9){

@@ -14,8 +14,18 @@ public class Application {
 
         MemberDTO member = new MemberDTO();
         member.setName("홍길동");
+        member.setNumber(123);
+        member.setAge(22);
+        member.setGender('남');
+        member.setWeight(77.7);
+        member.setActivated(false);
 
         System.out.println("member의 이름은 " + member.getName());
+        System.out.println("member의 회원번호는 " + member.getNumber());
+        System.out.println("member의 나이는 " + member.getAge());
+        System.out.println("member의 성별은 " + member.getGender());
+        System.out.println("member의 몸무게는 " + member.getWeight());
+
         /*
         * 캡슐화 원칙의 따라 작성을 하였으나 캡슐화의 의미가 없을 정도로
         * 필드명을 그대로 사용한 설정자와 접근자로 인해 캡술화의 효과가 없다.
