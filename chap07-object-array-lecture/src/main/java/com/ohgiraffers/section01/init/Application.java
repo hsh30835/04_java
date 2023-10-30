@@ -33,7 +33,7 @@ public class Application {
         carArray[5] = new Car("d",100, 4500);
 
         System.out.println("===================== carArray ========================");
-        for(int i = 0; i<carArray.length; i++){
+        for(int i = 0; i<carArray.length; i++){ //i가 carArray의 배열 길이에 도달할때까지 carArray[i]의 값을 출력한다
             carArray[i].driveMaxSpeed();
         }
         System.out.println("===================== carArray ========================");

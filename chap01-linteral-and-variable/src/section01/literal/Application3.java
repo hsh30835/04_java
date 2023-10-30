@@ -23,5 +23,6 @@ public class Application3 {
 
         System.out.println(9+'9'+9);
         System.out.println(18+'9'); //둘이 값 같음
+        System.out.println('9'+9);
     }
 }

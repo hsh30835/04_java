@@ -60,6 +60,7 @@ public class Application {
         System.out.println("ch1이 ch2보다 작은지 비교 : " + (ch1 < ch2));
         System.out.println("ch1이 ch2보다 작은거나 같은지 비교 : " + (ch1 <= ch2));
 
+
         /* 목차. 3. 논리값 비교 */
         /* 필기. ==과 !=은 비교 가능하지만 대소비교는 불가능하다. */
         boolean bool1 = true;

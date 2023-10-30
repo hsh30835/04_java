@@ -99,14 +99,78 @@ public class Star1 {
             System.out.println();
         }
 
-        /*for(int i = 1; i < 2*N; i+=2) { //N에 5입력시 1,3,5,7,9로 5줄 반복함
-            for(int j = 1; j < i; j+=2){ //
-                System.out.print("@");
+        System.out.println("===");
+        //    *
+        //   ***
+        //  *****
+        // *******
+        //*********
+        // *******
+        //  *****
+        //   ***
+        //    *
+
+        //줄은 9줄 5줄까진 1 3 5 7 9의 별찍기
+        //남은 4줄은 7 5 3 1의 별찍기
+        //첫 공백은 4 3 2 1 0
+        //다음 공백은 1 2 3 4
+
+        for(int i = 0; i<N; i++){ //5줄만들기
+            for(int j=N-1; j > i; j--){ //4 3 2 1 0의 공백칸만들기
+                System.out.print(" ");
             }
-            for(int j = 2*N; j > i; j--){
+            for(int j=0; j < 2*i+1; j++){ //1 3 5 7 9의 별찍기
                 System.out.print("*");
             }
             System.out.println();
-        }*/
+        }
+        for(int i = 1; i<N; i++){ //4줄 만들기
+            for(int j=0; j<i; j++){ //1 2 3 4 공백만들기
+                System.out.print(" ");
+            }
+            for(int j=2*N-1; j>2*i; j--){ //7 5 3 1 별찍기
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println("===");
+        //***** *****
+        //****   ****
+        //***     ***
+        //**       **
+        //*         *
+        //**       **
+        //***     ***
+        //****   ****
+        //***** *****
+
+        //9줄필요 5줄과 4줄로 나눔
+
+
+
+        for (int i = 0; i < N; i ++){ //첫 5줄
+            for (int j = N; j > i; j--){ //왼쪽에 5 4 3 2 1 *찍기함
+                System.out.print("*");
+            }
+            for (int j = 0; j<2*i+1; j++){ //중앙 1 3 5 7 9 공백찍기함
+                System.out.print(" ");
+            }
+            for (int j = N; j>i; j--){ //오른쪽 5 4 3 2 1 반대로 *찍기함
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i < N; i++){ //두번째
+            for(int j=0; j < i+1; j++){ //4줄 왼쪽 2 3 4 5 *찍기
+                System.out.print("*");
+            }
+            for(int j=2*N-1; j > 2*i; j--){ //중앙 7 5 3 1 공백찍기
+                System.out.print(" ");
+            }
+            for(int j=0; j < i+1; j++){ //오른쪽 1 2 3 4 5 반대로 *찍기
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

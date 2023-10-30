@@ -38,6 +38,9 @@ public class Application {
                 case 9 : System.out.println("프로그램을 종료합니다"); return;
                 default: System.out.println("잘못된 번호를 입력하였습니다"); break;
             }
+            // continue는 반복문의 처음시점으로 되돌아감
+            // break는 반복문을 탈출함
+            // return은 함수 그자체를 종료하고 최종값을 반환함
         }
     }
 }

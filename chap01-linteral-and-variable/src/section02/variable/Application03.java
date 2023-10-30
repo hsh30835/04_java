@@ -37,12 +37,12 @@ public class Application03 {
         //int_for - 20;
 
         //1-3 변수명은 대소문자를 구분한다
-        int Agd = 20;
+        int Age = 20;
         int True = 30; //대문자라서 불리언으로 안되고 문자열로 됨
 
         //1-4 변수명은 숫자로 시작할 수 없다
         //int_1test = 10;
-        //int_test1 = 10; 처음만 아니면됨
+        //int _test1 = 10; //처음만 아니면됨
 
         //1-5. 특수 기호는 '_'와 '$'만 사용이 가능하다.
         int _age = 10;

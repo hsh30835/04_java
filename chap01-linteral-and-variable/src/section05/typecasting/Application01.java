@@ -21,7 +21,7 @@ public class Application01 {
         * 1-3. 문자형은 int형으로 자동 형변환 된다.
         * 1-4. 논리형은 형변환 규칙에서 제외된다.
         * 2. 강제 형변환(명시적 형변환) : 형변환 cast 연산자를 이용한 강제적으로 수행하는형변환
-        * 2-1. 자동형변환이 적용되지 않는 경우 강제 형변환이 필요하다.
+         * 2-1. 자동형변환이 적용되지 않는 경우 강제 형변환이 필요하다.
          */
         System.out.println((float)(10 * 1.0f));
 
@@ -36,7 +36,7 @@ public class Application01 {
         int inum = snum;
         long lnum = inum;
 
-        //연산 시에도 자도으로 큰 쪽 자료형에 맞춰서 계산한다.
+        //연산 시에도 자동으로 큰 쪽 자료형에 맞춰서 계산한다.
         int num1 = 10;
         long num2 = 20;
         //int(정수)와 long연산하면 int가 long으로 변환함
