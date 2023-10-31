@@ -2,6 +2,8 @@ package main.java.com.ohgiraffers.test;
 
 public class Me {
     private String name;
+
+    private String result;
     public Me(String name) { this.name = name; }
 
     public void play(Game[] games){
@@ -15,5 +17,12 @@ public class Me {
             }
         }
     }
+
+//    public void onLineGame(OnlineGame[] onlineGames){
+//        for(OnlineGame on : onlineGames){
+//            System.out.println("ㅇ");
+//            result += on.getCompany();
+//        }
+//    }
 
 }

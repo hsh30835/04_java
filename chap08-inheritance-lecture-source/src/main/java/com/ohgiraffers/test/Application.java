@@ -19,7 +19,7 @@ public class Application {
         Game[] games = {maple,lol,watch,oneshot,omori,lovesam};
         me.play(games);
 
-        System.out.println("내가 선택한 게임은 " + oneshot + " 입니다.");
+        System.out.println("내가 선택한 게임은 " + oneshot.getName() + " 입니다.");
 
     }
 }

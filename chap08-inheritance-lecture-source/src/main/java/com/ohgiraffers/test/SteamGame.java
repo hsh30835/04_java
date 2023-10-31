@@ -22,4 +22,11 @@ public class SteamGame extends Game {
         System.out.println("이 게임의 장르는 " + super.getGener() + " 입니다.");
         return super.getGener();
     }
+
+    @Override
+    public String toString() {
+        return "SteamGame{" +
+                "price=" + price +
+                '}';
+    }
 }
