@@ -7,17 +7,13 @@ public class MemberService {
 
     private SnsAuth snsAuth;
 
-    public boolean findMember(String authType, MemberDTO memberDTO){
-        switch (authType){
-//            case "google" : snsAuth = 000; break;
-//            case "naver" : snsAuth = 000; break;
-//            case "kakao" : snsAuth = 000; break;
-            default:
-                System.out.println("존재하지 않는 회원 인증 유형입니다."); return false;
-        }
+    public MemberService(SnsAuth snsAuth) {
+        this.snsAuth = snsAuth;
+    }
 
-//        boolean result = snsAuth.login(memberDTO);
+    public boolean findMember(MemberDTO memberDTO){
+        boolean result = snsAuth.login(memberDTO);
 
-//        return result;
+        return result;
     }
 }
