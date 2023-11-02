@@ -7,11 +7,14 @@ public class Book {
     private String author;
     private int price;
 
+    public Book(){}
+
     public Book(int number, String title, String author, int price) {
-
+        this.number = number;
+        this.title = title;
+        this.author = author;
+        this.price = price;
     }
-
-
 
     public int getNumber() {
         return number;
@@ -95,18 +98,18 @@ public class Book {
 
     @Override
     public int hashCode() {
+
         int result = 1;
 
         final int PRIME = 31;
 
-        result = PRIME * result + this.number;
+        result = PRIME * result * this.number;
 
-//        result = PRIME * result + this.title.hashCode();
-//        result = PRIME * result + this.author.hashCode();
-//        result = PRIME * result + this.price;
+        result = PRIME * result * this.title.hashCode();
+        result = PRIME * result * this.author.hashCode();
+        result = PRIME * result * this.price;
 
-        return  result;
+        return result;
     }
-
 
 }
