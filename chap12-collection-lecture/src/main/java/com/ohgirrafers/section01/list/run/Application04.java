@@ -37,5 +37,7 @@ public class Application04 {
         System.out.println(integerStack);
         // stack의 저장된 요소가 없을 때 참조하고자 하는 경우 stack이 비어있다는 오류를 발생하게 된다.
         //EmptyStackException
+        System.out.println("pop() : " +integerStack.pop());
+        System.out.println(integerStack);
     }
 }

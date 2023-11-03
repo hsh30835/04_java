@@ -83,6 +83,7 @@ public class Applicaiton01 {
         stringList.add("mango");
         stringList.add("orange");
         stringList.add("grape");
+        stringList.add("수박");
 //        stringList.add(1234); //String인데 숫자 넣어서 에러남
 //        stringList.add(String.valueOf(1234)); 타입지시해야됨
         System.out.println();
@@ -101,6 +102,7 @@ public class Applicaiton01 {
                 }
             }
         });
+
         System.out.println(stringList);
 
         Collections.sort(stringList, new Comparator<String>() {

@@ -31,7 +31,7 @@ public class Applicaiton2 {
         wildCardFarm.superType(new RabbitFarm<Rabbit>(new Rabbit()));
         wildCardFarm.superType(new RabbitFarm<Bunny>(new Bunny()));
         /*
-        아래의 내용을 테스트 하기전 RabbitFarm<T extends Rabbit> -> RabbotFarm<T extedms Object>
+        아래의 내용을 테스트 하기전 RabbitFarm<T extends Rabbit> -> RabbitFarm<T extends Object>
          */
         //RabbitFarm<T extends Rabbit>으로 타입이 지정되어 있기 때문에
         // superType(RabbitFarm<? super Bunny>)로 정의를 하게 되면

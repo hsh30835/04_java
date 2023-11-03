@@ -11,7 +11,7 @@ public class Applicaiton03 {
         * 내부는 이중 연결리스트로 구성되어있다.
         *
         * 단일 연결 리스트 :
-        * 저장한 요소가 순서를 유지하지 않고 저장되지만 이러한 요소들 사이를 링크로 연결하여 굿어하여
+        * 저장한 요소가 순서를 유지하지 않고 저장되지만 이러한 요소들 사이를 링크로 연결하여 구성하며
         * 마치 연결된 리스트 형태인 것 처럼 만든 자료 구조이다.
         * 요소의 저장과 삭제가 빈번히 일어나는 경우 ArrayList보다 성능면에서는 우수하다.
         * 하지만 단일 연결 리스트는 다음 요소만 링크하기 때문에 이전 요소로 접근하기 어렵다는 단점이 있으며
@@ -38,11 +38,13 @@ public class Applicaiton03 {
         for (int i = 0; i < linkedList.size(); i++){
             System.out.println(i + " : " + linkedList.get(i));
         }
+        System.out.println();
         linkedList.remove(1);
 
         for(String s:linkedList){
             System.out.println(s);
         }
+        System.out.println();
         linkedList.set(0,"fineApple");
         // List의 연결 방식은 다음 주소를 참조하는 방식으로 연결이 되기 때문에 참조 인덱스가 없는 경우
         // IndexOutOfBoundsException 에러를 발생시키게 된다.
