@@ -24,6 +24,11 @@ public class Application {
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
 
+            if(choice == 9){
+                System.out.println("프로그램 종료");
+                return;
+            }
+
             scanner.nextLine();
             System.out.println("아이디를 입력해주세요 : ");
             memberDTO.setId(scanner.nextLine());
@@ -52,10 +57,6 @@ public class Application {
                         System.out.println("kakao 로그인에 성공하였습니다. " + memberDTO.getId());
                     }
                     break;
-
-                case 9 :
-                    System.out.println("로그인을 종료합니다");
-                    return;
             }
         }while(true);
 

@@ -35,4 +35,12 @@ public abstract class Game {
         return this.gener;
     }
 
+    @Override
+    public String toString() {
+        return "Game{" +
+                "name='" + name + '\'' +
+                ", exe='" + exe + '\'' +
+                ", gener='" + gener + '\'' +
+                '}';
+    }
 }
