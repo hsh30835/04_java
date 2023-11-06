@@ -13,13 +13,22 @@ public class Application04 {
         int[] num = new int[5];
         Scanner scanner = new Scanner(System.in);
         System.out.println("5명 점수 입력");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
-        int num4 = scanner.nextInt();
-        int num5 = scanner.nextInt();
+        for(int i=0; i<num.length; i++){
+            scanner.nextInt();
+        }
+        System.out.println(num[5]);
+//        int num1 = scanner.nextInt();
+//        int num2 = scanner.nextInt();
+//        int num3 = scanner.nextInt();
+//        int num4 = scanner.nextInt();
+//        int num5 = scanner.nextInt();
 
-        int sum = num1 + num2 + num3 + num4 + num5;
+//        int sum = num1 + num2 + num3 + num4 + num5;
+        int sum = 0;
+        for(int i=0;i< num.length;i++){
+            sum += num[i];
+        }
+
         double a = sum/5;
         System.out.println("점수의 합" + sum);
 

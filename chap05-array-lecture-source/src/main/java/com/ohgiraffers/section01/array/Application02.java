@@ -49,6 +49,13 @@ public class Application02 {
         System.out.println(iarray[0]);
         System.out.println(test[0]);
 
+        System.out.println("==================");
+        int q[] = {1,2,3};
+        int w[] = {1,2,3};
+        System.out.println(q.hashCode());
+        System.out.println(w.hashCode());
+        System.out.println("==================");
+
         Scanner sc = new Scanner(System.in);
 
         int size = sc.nextInt();
@@ -62,5 +69,7 @@ public class Application02 {
 
         darr = null;
         System.out.println("삭제 후 darr의 길이 : " + darr.length);
+
+
     }
 }

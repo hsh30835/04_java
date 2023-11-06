@@ -22,19 +22,19 @@ public class Application03 {
         //heap의 특징때매 0으로 나옴
 
         for (int i = 0; i < iarr.length; i++) {
-            System.out.println("i array [ " + i + "] = "+ iarr[i]);
+            System.out.println("i array [ " + i + " ] = "+ iarr[i]);
         }
 
         //int iarr2 = new int[5]; //{10,20,30,40,50}; 밑과 동일한내용
         int[] iarr2 = {10,20,30,40,50};
         for (int i = 0; i < iarr2.length; i++) {
-            System.out.println("i array [ " + i + "] = "+ iarr2[i]);
+            System.out.println("i array [ " + i + " ] = "+ iarr2[i]);
 
         }
 
         String[] sarray = {"안녕","hi","니하오"};
-        /*for (int i = 0; i < sarray.length; i++) {
-
-        }*/
+        for (int i = 0; i < sarray.length; i++) {
+            System.out.println(sarray[i]);
+        }
     }
 }
