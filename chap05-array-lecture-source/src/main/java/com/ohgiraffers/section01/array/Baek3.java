@@ -10,38 +10,22 @@ public class Baek3 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("정수 입력 ");
         int N = scanner.nextInt();
-
-        //길이가 N인 배열만들기
+        //배열 선언하고 배열 안에 값을 넣어준다
         int[] arr = new int[N];
-
-        //배열의 크기만큼 값을 입력
-        for (int i = 0; i < N; i++) {
-            System.out.println("값 입력");
+        System.out.println("값 입력 : ");
+        for(int i=0; i< arr.length; i++){
             arr[i] = scanner.nextInt();
         }
-
-        //배열 값의 최댓값, 최솟값 구하기
-        int max = 0;
-        int min = 10000000;
-        //최대값, 최소값 변수에 값을 지정해줄 때는 최소값에는 가장 큰 값을 대입해놓고, 최대값에는 가장 작은 값을 넣어준다.
-        //이유는 수치 두개를 만들어놓고, 첫번째 값과 비교하면 무조건 첫번째 값이 최대값이나 최소값에 대입되기 때문이다.
-
-        for (int j=0; j<N; j++){
-            //최댓값 구하기
-            if(max<arr[j]){
-                max=arr[j];
-            }
-            /*if는 맞을 때 실행 만약 arr배열의 값이 {1,2,3}이라 가정할때
-              1은 0보다 크니 실행 2는 0보다 크니 실행 3은 0보다 크니 실행
-              그래서 3이 나옴
-             */
-
-            //최솟값 구하기
-            if(min>arr[j]){
-                min=arr[j];
-            }
+        //최댓값 최소값 구하기
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int i : arr){
+            min = Math.min(min, i);
+            max = Math.max(max, i);
         }
-        System.out.println("최댓값 " + max);
-        System.out.println("최솟값 " + min);
+
+        System.out.println("최댓값 : " +max);
+        System.out.println("최솟값 : " +min);
+
     }
 }

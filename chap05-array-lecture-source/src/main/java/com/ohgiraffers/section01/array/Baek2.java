@@ -20,8 +20,8 @@ public class Baek2 {
         int[] A = new int[N];
 
         //수열 A에 값 입력하기
+        System.out.println("값 입력");
         for (int i = 0; i < N; i++) {
-            System.out.println("값 입력");
             A[i] = sc.nextInt();
         }
 

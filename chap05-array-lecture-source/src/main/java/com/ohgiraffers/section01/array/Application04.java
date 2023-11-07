@@ -14,9 +14,8 @@ public class Application04 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("5명 점수 입력");
         for(int i=0; i<num.length; i++){
-            scanner.nextInt();
+            num[i] = scanner.nextInt();
         }
-        System.out.println(num[5]);
 //        int num1 = scanner.nextInt();
 //        int num2 = scanner.nextInt();
 //        int num3 = scanner.nextInt();

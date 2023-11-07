@@ -9,16 +9,19 @@ public class Baek4 {
         //이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 
         Scanner scanner = new Scanner(System.in);
-        //9의 길이를 가진 배열만들기
+        //9의 배열길이 만들기
         int[] arr = new int[9];
-        //최댓값 설정
-        int max = arr[0];
-        //최댓값의 위치
+        //최댓값
+        int max = 0;
+        //몇번째
         int index = 0;
-
-        for (int i = 0; i < arr.length; i++) {
+        //배열에 값 집어넣기
+        for(int i=0;i< arr.length;i++){
             arr[i] = scanner.nextInt();
-            if (max < arr[i]) {
+        }
+        //최댓값구하기
+        for(int i=0;i< arr.length;i++){
+            if(arr[i]>max){
                 max = arr[i];
                 index = i+1;
             }

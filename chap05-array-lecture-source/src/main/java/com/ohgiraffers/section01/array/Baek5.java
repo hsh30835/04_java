@@ -1,5 +1,7 @@
 package main.java.com.ohgiraffers.section01.array;
 
+import java.util.Scanner;
+
 public class Baek5 {
     public static void main(String[] args){
         //X대학 M교수님은 프로그래밍 수업을 맡고 있다. 교실엔 학생이 30명이 있는데, 학생 명부엔 각 학생별로 1번부터 30번까지 출석번호가 붙어 있다.
@@ -8,5 +10,11 @@ public class Baek5 {
         //길이가 30인 배열 생성
         //배열안에 값 입력
         //안한 사람 중 작은 수 비교하기
+        //길이가 8인 배열1생성
+        //길이가 10인 배열2생성
+        //배열1과 2를 비교해서 없는 수 찾기
+        //최솟값과 최댓값으로 출력하기
+        Scanner scanner = new Scanner(System.in);
+
     }
 }

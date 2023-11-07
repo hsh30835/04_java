@@ -20,15 +20,25 @@ public class Baek1 {
         int N = scanner.nextInt();
 
         int[] arr = new int[N];
+        int count = 0;
 
 
-        if (N>100 && N<1) {
+        if (N>=100 && N<=1) {
                 System.out.println("재입력");
                 return;
         }
+        System.out.println("값 입력 : ");
         for(int i=0;i<arr.length;i++){
-            System.out.print("값 입력");
             arr[i] = scanner.nextInt();
         }
+        System.out.println("정수 입력 : ");
+        int V = scanner.nextInt();
+        for(int i=0; i< arr.length; i++){
+            if(arr[i] == V){
+                count ++;
+            }
+        }
+        System.out.println(count);
+
     }
 }

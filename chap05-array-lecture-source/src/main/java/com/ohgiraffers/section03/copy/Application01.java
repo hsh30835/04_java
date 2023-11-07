@@ -12,7 +12,7 @@ public class Application01 {
         * 얕은 복사는 stack에 저장되어 있는 배열의 주소값만 복사한다는 것이다.
         * 따라서 두 개의 레퍼런스 변수는 동일한 배열의 주소값을 가지고 있다.
         * 하나의 레퍼런스 변수에 저장된 주소값을 가지고 배열의 내용을 수정(값 변경)을 하게되면
-        * 다른 레퍼런스변수로 배열에 접근했을 때도 동일한 배열을 가리키고 있기 떄문에 변경된 값이 반영되어있다.
+        * 다른 레퍼런스변수로 배열에 접근했을 때도 동일한 배열을 가리키고 있기 때문에 변경된 값이 반영되어있다.
         * */
 
         int[] originArr = {1,2,3,4,5};
@@ -43,6 +43,7 @@ public class Application01 {
         System.out.println();
         System.out.println("deepCopy hashcode : "+ deepCopy.hashCode());
         System.out.println("deepCopy[0] : "+ deepCopy[0]);
+        System.out.println(deepCopy.length);
         /*for (int x : deepCopy){
             System.out.println("deepCopy = " + x);
         }*/
