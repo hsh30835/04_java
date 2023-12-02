@@ -101,6 +101,10 @@ public class Application03 {
                 + (salary3+bonus3) + "만원 입금되었습니다.");
         System.out.println("김차장 님의 월급은 " + (salary4) + "만원 + 보너스" + (bonus4) +  "만원으로 총"
                 + (salary4+bonus4) + "만원 입금되었습니다.");
+
+        int num1 = 4;
+        double num3 = 1.5;
+        System.out.println((int) (num1 + num3));
     }
 
 

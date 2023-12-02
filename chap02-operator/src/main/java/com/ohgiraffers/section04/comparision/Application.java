@@ -7,7 +7,7 @@ public class Application {
         *  연산자 중 참 혹은 거짓을 반환하는 연산자는 삼향연산자의 조건식이나 조건문의 조건절에 많이 사용한다.
         *
         * 비교 연산자의 종류
-        * == : 왼족의 피연산자와 오른쪽의 피연산자가 같다면 true 다르면 false를 반환한다.
+        * == : 왼쪽의 피연산자와 오른쪽의 피연산자가 같다면 true 다르면 false를 반환한다.
         * != : 왼쪽의 피연산자와 오른쪽의 피연산자가 다르면 true 같으면 false를 반환한다.
         * > : 왼쪽의 피연산자가 오른쪽의 피연산자보다 크면 true 아니면 false를 반환한다.
         * >= : 왼쪽의 피연산자가 오른쪽의 피연산자보다 같거나 크면 true 아니면 false를 반환한다.
@@ -94,6 +94,14 @@ public class Application {
 
         boolean result = x <= y;
         System.out.println("result의 값은 : " + result);
+
+        String s1 = "qwe";
+        String s2 = "qwer";
+        String s3 = "qwer";
+        String s4 = "QWER";
+        System.out.println(s3.equals(s1));
+        System.out.println(s3.equals(s2));
+        System.out.println(s4.equals(s3.toUpperCase()));
 
     }
 }

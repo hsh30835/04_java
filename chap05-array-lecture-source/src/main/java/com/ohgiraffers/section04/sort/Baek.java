@@ -17,6 +17,10 @@ public class Baek {
         //(0,0) 13 (40,0) 37 반지름이 13인 0,0을 중심으로 잡는 원과 반지름이 37인 40,0을 중점으로 잡는 원
         //(0,0) 3 (0,7) 4 1
         //(1,1) 1 (1,1) 5 0
+        //내접문제
+        //r1 = 13 r2 = 37 x1과 x2의 길이 40 r1+r2>x2-x1, r2-r1<x2-x1 이러면 접점이 2개다
+        //r1 = 3 r2 = 4 x1과 x2의 길이 0
+
         Scanner scanner = new Scanner(System.in);
         int T = scanner.nextInt();
         for (int i=0;i<T;i++){
@@ -27,5 +31,6 @@ public class Baek {
             int y2 = scanner.nextInt();
             int z2 = scanner.nextInt();
         }
+
     }
 }

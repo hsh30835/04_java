@@ -17,5 +17,10 @@ public class Application {
         System.out.println(++num1);
         System.out.println(++num1);
         System.out.println(num1);
+        System.out.println("===========");
+        int n = 5;
+        System.out.println(--n);
+        System.out.println(n--);
+        System.out.println(n);
     }
 }

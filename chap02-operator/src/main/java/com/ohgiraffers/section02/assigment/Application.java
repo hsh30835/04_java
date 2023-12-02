@@ -24,5 +24,21 @@ public class Application {
 
         num %= 2;
         System.out.println(num);
+
+        System.out.println("============");
+        int num1 = 10;
+        num1 = num1 + 2;
+        System.out.println(num1);
+        num1+=2;
+        System.out.println(num1);
+        num1-=3;
+        System.out.println(num1);
+        num1*=4;
+        System.out.println(num1);
+        num1/=2;
+        System.out.println(num1);
+        num1%=7;
+        System.out.println(num1);
+
     }
 }
